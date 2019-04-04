@@ -1,0 +1,102 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+
+}
+.App {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.container{
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  background-color: #28b9fc; 
+  height: 100vh;
+  width: 50%;
+}
+header{
+  margin-top: 20px;
+  height: 50px;
+}
+.input-to-do{
+  height: 100px;
+  width: 100%;
+  margin-top: 10px;
+  
+}
+input[type='text']{
+  width: 60%;
+  height: 50px;
+  box-shadow: 0px 0px 15px 2px #076df3;
+  padding: 10px;
+}
+input[type='text']::-moz-placeholder { /* Firefox 19+ */
+  color: blue;
+}
+input[type='checkbox']{
+  width: 15px;
+  height: 15px;
+  margin-right: 30px;
+}
+button{
+  margin-left: 30px;
+  width: 15%;
+  height: 50px;
+  background-color: blue;
+  border: none;
+}
+.item-list{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 80vh;
+  margin-top: 15px;
+  overflow: auto;
+}
+.container-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  min-height: 70px;
+  border: 2px solid #44d3f7;
+  border-radius: 10px;
+  background-color: #44d3f7;
+  margin-bottom: 10px;
+}
+ul{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  width:100%;
+  height: 80vh;
+}
+li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  border: 2px solid #44d3f7;
+  border-radius: 10px;
+  background-color: #44d3f7;
+  width: 70%;
+  min-height: 68px;
+  position: relative;
+}
+li:hover{
+  cursor: pointer;
+}
+li:hover::after {
+  content: 'X';
+  color: gray;
+  position: absolute; 
+  top:10px;
+  right:20px;
+  cursor: pointer;
+}
+
+
